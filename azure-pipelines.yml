@@ -17,13 +17,15 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: FortifyOnDemandStatic@3
+- task: FortifyOnDemandStatic@5
   inputs:
     FortifyProjects: 'https://github.com/WebGoat/WebGoat.git'
-    BSIToken: 'eyJ0ZW5hbnRJZCI6MTM5MiwidGVuYW50Q29kZSI6InBsdXNfZGVtbyIsInJlbGVhc2VJZCI6MjE2NDgwLCJwYXlsb2FkVHlwZSI6IkFOQUxZU0lTX1BBWUxPQUQiLCJhc3Nlc3NtZW50VHlwZUlkIjoyNzQsInRlY2hub2xvZ3lUeXBlIjoiSkFWQS9KMkVFIiwidGVjaG5vbG9neVR5cGVJZCI6NywidGVjaG5vbG9neVZlcnNpb24iOiIxMSIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjIwLCJhdWRpdFByZWZlcmVuY2UiOiJNYW51YWwiLCJhdWRpdFByZWZlcmVuY2VJZCI6MSwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjp0cnVlLCJwb3J0YWxVcmkiOiJodHRwczovL2Ftcy5mb3J0aWZ5LmNvbSIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLmFtcy5mb3J0aWZ5LmNvbSIsInNjYW5QcmVmZXJlbmNlIjoiU3RhbmRhcmQiLCJzY2FuUHJlZmVyZW5jZUlkIjoxfQ=='
-    APIAuthenticationType: '1'
-    APIKey: '74fe9f3e-1680-4a68-8cb6-3380b7e762b1'
-    APISecret: 'djBITDBkaE1ibUVPbUsuM1laY0FzUDVlXyVrMGhj0'
-    EntitlementPreference: '1'
-    PurchaseEntitlements: false
-    PreferRemediation: false
+    BSIToken: 'eyJ0ZW5hbnRJZCI6MTM5MiwidGVuYW50Q29kZSI6InBsdXNfZGVtbyIsInJlbGVhc2VJZCI6MjIxOTAwLCJwYXlsb2FkVHlwZSI6IkFOQUxZU0lTX1BBWUxPQUQiLCJhc3Nlc3NtZW50VHlwZUlkIjoyNzQsInRlY2hub2xvZ3lUeXBlIjoiSkFWQS9KMkVFIiwidGVjaG5vbG9neVR5cGVJZCI6NywidGVjaG5vbG9neVZlcnNpb24iOiIxMCIsInRlY2hub2xvZ3lWZXJzaW9uSWQiOjE5LCJhdWRpdFByZWZlcmVuY2UiOiJBdXRvbWF0ZWQiLCJhdWRpdFByZWZlcmVuY2VJZCI6MiwiaW5jbHVkZVRoaXJkUGFydHkiOmZhbHNlLCJpbmNsdWRlT3BlblNvdXJjZUFuYWx5c2lzIjp0cnVlLCJwb3J0YWxVcmkiOiJodHRwczovL2Ftcy5mb3J0aWZ5LmNvbSIsImFwaVVyaSI6Imh0dHBzOi8vYXBpLmFtcy5mb3J0aWZ5LmNvbSIsInNjYW5QcmVmZXJlbmNlIjoiU3RhbmRhcmQiLCJzY2FuUHJlZmVyZW5jZUlkIjoxfQ=='
+    APIAuthenticationType: '2'
+    Username: 'tamdemo'
+    PersonalAccessTokenSecret: 'TzUwdDBoSG44c3d3UURKck1HYllrYCxgZ2xGamI20'
+    TenantID: 'plus_demo'
+    EntitlementPreference: '0'
+    InProgressScanActionType: '1'
+    RemediationScanPreference: '2'
+    PolicyFailAction: '0'
