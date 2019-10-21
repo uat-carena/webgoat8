@@ -29,3 +29,5 @@ steps:
     InProgressScanActionType: '1'
     RemediationScanPreference: '2'
     PolicyFailAction: '0'
+    PurchaseEntitlements: false
+    
